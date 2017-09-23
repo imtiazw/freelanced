@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Game Room</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="game_room_style.css">
+        <script src="jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript" src="jquery.cookie.js"></script>
+        <script type="text/javascript" src="game_room_script.js"></script>
+    </head>
+    <body>
+        <div id="topHeader">
+            <table id="header">
+                <tr>
+                    <td><button id="createBoard">Create Board</button></td><td><button id="gameRules">Game Rules</button></td><td><button id="signOut">Sign Out</button></td><td><button id="editProfile">Edit Profile</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="playerList">
+            <table id="playerData">
+                <tr id="tableHeader"><th>Player ID</th><th>Rating</th></tr>
+            </table>
+        </div>
+        <div id="roomList">            
+            <table style="">
+                <tr id="tableHeader"><th>Table</th><th>White</th><th>Black</th><th>Game Setting</th></tr>
+            </table>
+        </div>
+        <div id="timeSetting">
+            <table>
+                <tr>
+                    <th style="padding-left: 20px;">Time Settings</th>
+                </tr>
+                <tr>
+                    <td>Maximum Game Time :</td><td><input type="text" id="maximumGameTime" value="30"/></td>
+                </tr>
+                <tr>
+                    <td>Time Per Move :</td><td><input type="text" id="timePerMove" value="2"/></td>
+                </tr>
+                <tr>
+                    <td></td><td><button id="setTime">Set Time</button><button id="cancelSetTime">Cancel</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="joinBoardRequest" hidden="true"></div>
+        <div id="requestTab" hidden="true">
+            <p id="requestMessage"></p>
+            <table>
+                <p id="joinBoardHeading">Join Game Request</p>
+                <tr><td>Time Per Move : </td><td id="requestTableTimePerMove"></td></tr>
+                <tr><td>Maximum Game Time : </td><td id="requestTableMaximumGameTime"></td></tr>
+                <tr><td><button id="denyRequest">Deny</button></td><td><button id="acceptRequest">Join Board</button></td></tr>
+                <tr><td>Deny Reason : </td><td><input type="text" id="denyReason" value=""/></td></tr>
+            </table>
+        </div>
+        <div id="newChessBoardError">
+            <div style="color: blanchedalmond">Chess Boards Are Full. Please Try Again Later.</div>
+            <button id="errorOk">Ok</button>
+        </div>
+        <div id="joinBoardError">
+            <div style="color: blanchedalmond">Some Error Occurred. Please Try Again.</div>
+            <button>Ok</button>
+        </div>
+        <div id="chatWindow">
+            <div id="textArea">
+            </div>
+            <input type="text" id="input"/><button id="send">Send</button>
+        </div>
+    </body>
+</html>

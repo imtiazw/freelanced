@@ -1,0 +1,366 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 12, 2014, 9:15:57 PM
+    Author     : ALI
+*/
+
+body
+{
+    background-color: rgba(128,64,0,0.83);
+}
+
+#exitBoard
+{
+    background-color: #FF6633;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.black
+{
+    height: 70px;
+    width: 70px;
+    border-spacing: 0px;
+    background-color: maroon;
+}
+
+.white
+{
+    width: 70px;
+    height: 70px;
+    background-color: burlywood;
+    border-spacing: 0px;
+}
+
+#gameMoveWindow
+{
+    background-color: rgba(211,211,211,0.3);
+    width: 250px;
+    height: 490px;
+    margin-top: 10px;
+    margin-left: 20px;
+    overflow: auto;
+}
+
+#gameMoveWindow th
+{
+    width: 125px;
+    color: white;
+    background-color: rgb(64,0,0);
+    height: 40px;
+    font-size: 17px;
+}
+#chessBoard
+{
+    margin-left: 283px;
+    margin-top: -535px;
+}
+
+.boardAlphabet
+{
+    width: 20px;
+    height: 15px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.boardNumber
+{
+    width: 15px;
+    height: 20px;
+    font-size: 20px;
+    float: left;
+    color: white;
+}
+#time
+{
+    width: 250px;
+    height: 30px;
+    /* background-color: slategrey; */
+    float: right;
+    margin-right: 180px;
+    margin-top: -170px;
+}
+
+#enableDisableChat
+{
+    margin-top: -30px;
+}
+
+#enableDisableChat button
+{
+    background-color: #FF6633;
+    width: 175px;
+    font-size: initial;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#chatWindow
+{
+    width: 872px;
+    height: 170px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#send
+{
+    background-color: #FF6633;
+    font-size: small;
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#inputText
+{
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 800px;
+}
+
+#playerList
+{
+    background-color: rgba(211,211,211,0.3);
+    float: right;
+    width: 275px;
+    height: 200px;
+    margin-top: -700px;
+    margin-right: 150px;
+}
+
+#playerList th
+{
+    background-color: rgb(64,0,0);
+    height: 30px;
+    width: 150px;
+    font-size: 17px;
+    color: white;
+    overflow: auto;
+}
+
+#buttonPanel button
+{
+    background-color: #FF6633;
+    font-size: medium;
+    border-radius: 5px;
+    width: 130px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#buttonPanel
+{
+    float: right;
+    margin-right: 147px;
+    margin-top: -494px;
+}
+
+#competitorList
+{
+    background-color: rgba(211,211,211,0.3);
+    float: right;
+    width: 275px;
+    height: 200px;
+    margin-top: -400px;
+    margin-right: 150px;
+}
+
+#competitorList th
+{
+    background-color: rgb(64,0,0);
+    height: 30px;
+    width: 150px;
+    font-size: 17px;
+    color: white;
+    overflow: auto
+}
+
+#chessBoard img
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.tableList td, #competitorList table td
+{
+    background-color: white;
+    width: 300px;
+    height: 20px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#chatWindow
+{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.joinBoardMessage
+{
+    color: grey;
+    font-family: sans-serif;
+}
+
+.sender
+{
+    font-weight: bold;
+    color: blue;
+}
+
+.receiver
+{
+    font-weight: bold;
+    color: black;
+}
+
+#playBoardMessage
+{
+    background-color: initial;
+    padding: 2px;
+    font-weight: bold;
+    color: black;
+    font-size: 300%;
+    margin-left: 200px;
+    margin-top: -610px;
+}
+
+#choosePiece
+{
+    background-color: mistyrose;
+    width: 240px;
+    margin-left: 35%;
+    margin-top: -40%;
+}
+
+#checkGiven 
+{
+    position: initial;
+    font: initial; 
+    font-size: 60px; 
+    color: black; 
+    margin-left: 37%;
+    margin-top: -43%;
+}
+
+#competitorList table td:hover
+{
+    cursor: pointer;
+}
+
+#requestTab
+{
+    background-color: dimgrey;
+    position: absolute;
+    width: initial;
+    height: initial;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 35%;
+    margin-top: -45%;
+    border-radius: 15px;
+}
+
+#joinBoardHeading
+{
+    font-family: sans-serif; 
+    font-size: medium; 
+    font-weight: bold; 
+    text-align: center; 
+    border: 5px;
+}
+
+#requestMessage td
+{
+    text-align: justify;
+}
+
+#requestTab > table > tbody > tr:nth-child(1) > td:nth-child(1),
+#requestTab > table > tbody > tr:nth-child(4) > td:nth-child(1),
+#requestTab > table > tbody > tr:nth-child(2) > td:nth-child(1),
+#requestTableMaximumGameTime,
+#requestTableTimePerMove
+{
+    font-weight: bold;
+}
+
+#denyRequest
+{
+    background-color: gray;
+    font-size: 16px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #ccccff;
+    width: auto;
+}
+
+#acceptRequest
+{
+    background-color: #FF6633;
+    font-size: medium;
+    width: auto;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#joinBoardError
+{
+    background-color: darkgray;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    border-radius: 7px;
+    color: black;
+    margin-left: 35%;
+    margin-top: -40%;
+}
+
+#showText
+{
+    background-color: darkgray;
+    width: 300px;
+    height: 50px;
+    margin-left: 36%;
+    margin-top: -40%;
+    padding: 7px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.disabledChatMessage
+{
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#checkMate
+{
+    position: absolute;
+    font: initial; 
+    font-size: 60px; 
+    color: black; 
+    margin-left: 34%;
+    margin-top: -43%
+}

@@ -1,0 +1,10 @@
+code was implemented in:
+
+
+
+Product Version: NetBeans IDE 8.0.1 (Build 201408251540)
+Java: 1.7.0_55; Java HotSpot(TM) 64-Bit Server VM 24.55-b03
+Runtime: Java(TM) SE Runtime Environment 1.7.0_55-b13
+System: Windows 7 version 6.1 running on amd64; Cp1252; en_US (nb)
+User directory: C:\Users\ALI\AppData\Roaming\NetBeans\8.0
+Cache directory: C:\Users\ALI\AppData\Local\NetBeans\Cache\8.0

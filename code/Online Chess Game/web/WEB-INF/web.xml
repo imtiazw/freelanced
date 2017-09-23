@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>VerifyEmail</servlet-name>
+        <servlet-class>SignUp.VerifyEmail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignIn</servlet-name>
+        <servlet-class>SignIn.SignIn</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StartServer</servlet-name>
+        <servlet-class>StartServer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerifyEmail</servlet-name>
+        <url-pattern>/VerifyEmail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignIn</servlet-name>
+        <url-pattern>/SignIn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StartServer</servlet-name>
+        <url-pattern>/StartServer</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

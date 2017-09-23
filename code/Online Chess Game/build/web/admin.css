@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2014, 2:49:29 PM
+    Author     : ALI
+*/
+
+#header > table
+{
+    color: blue;
+    border-spacing: 3em;
+}
+
+#header > table > tbody > tr > td:nth-child(2), #header > table > tbody > tr > td:nth-child(3):hover
+{
+    cursor: pointer;
+}
+
+#adminTable
+{
+    margin-left: 8em;
+}
+
+#adminTable > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(1) > th,
+#adminTable > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(1) > th
+{
+    font-size: 25px;
+    color: black;
+}
+
+#adminTable > table > tbody > tr > td:nth-child(1)
+{
+    padding-right: 50em;
+}
+
+#adminTable > table > tbody > tr > td
+{
+    color: blue;
+    text-align: center;
+}
+
+.operation:hover
+{
+    cursor: pointer;
+}

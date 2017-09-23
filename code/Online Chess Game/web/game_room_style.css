@@ -1,0 +1,290 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 10, 2014, 4:09:22 PM
+    Author     : ALI
+*/
+body
+{
+    background:rgba(128,64,0,0.9);
+}
+
+#topHeader
+{
+    margin-right: 0px;
+    margin-top: 20px;
+}
+#header td
+{
+    padding-left: 15px;
+}
+
+#header button
+{
+    background-color: #FF6633;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#playerList
+{
+    float: right;
+    width: 300px;
+    height: 750px;
+    background: rgba(224,224,224, 0.38);
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#playerList #tableHeader
+{
+    background-color: #400000;
+}
+
+#playerList th
+{
+    font-size: 14px;
+}
+
+#roomList
+{
+    float: left;
+    width: 1000px;
+    height: 450px;
+    background: rgba(224,224,224, 0.38);
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#roomList table
+{
+    padding-top: 10px;  
+}
+
+#roomList #tableHeader
+{
+    height: 30px;
+}
+
+#roomList #tableHeader th
+{
+    background-color: rgb(64,0,0);
+    width: 900px;
+    height: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+#playerList table
+{
+    padding-top: 10px;
+}
+#playerList #tableHeader
+{
+    height: 30px;
+}
+
+#playerList #tableHeader th
+{
+    background-color: rgb(64,0,0);
+    width: 300px;
+    height: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+#chatWindow #textArea
+{
+    background-color: white;
+    width: 1000px;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 475px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    overflow: auto;
+    padding-left: 10px;
+}
+
+#chatWindow #input
+{
+    width: 940px;
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 20px;
+}
+
+#chatWindow #send
+{
+    background-color: #FF6633;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#playerData td
+{
+    background-color: white;
+    border: black solid thin;
+    font-family:serif;
+    font-size: 16px;
+}
+
+.tableList td
+{
+    background-color: rgba(192,192,255, 0.16);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: black solid thin;
+}
+
+.signInMessage
+{
+    color: grey;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.sender
+{
+    color: blue;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.receiver
+{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#timeSetting
+{
+    background-color: rgb(128,64,0);
+    width: 330px;
+    height: 140px;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 300px;
+    padding-left: 20px;
+}
+
+#timeSetting table
+{
+    padding-top: 20px;
+}
+
+#timeSetting button
+{
+    background-color: #FF6633;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#newChessBoardError
+{
+    background-color: rgb(128,64,0);
+    width: 330px;
+    height: 70px;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 300px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#newChessBoardError button
+{
+    background-color: #FF6633;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.joinGame
+{
+    background-color: gray;
+    font-size: 16px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #ccccff;
+    width: 100px;
+}
+
+#requestTab
+{
+    background-color: dimgrey;
+    position: absolute;
+    width: initial;
+    height: initial;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 35%;
+    margin-top: 15%;
+    border-radius: 15px;
+}
+
+#joinBoardHeading
+{
+    font-family: sans-serif; 
+    font-size: medium; 
+    font-weight: bold; 
+    text-align: center; 
+    border: 5px;
+}
+
+#requestMessage td
+{
+    text-align: justify;
+}
+
+#requestTab > table > tbody > tr:nth-child(1) > td:nth-child(1),
+#requestTab > table > tbody > tr:nth-child(4) > td:nth-child(1),
+#requestTab > table > tbody > tr:nth-child(2) > td:nth-child(1),
+#requestTableMaximumGameTime,
+#requestTableTimePerMove
+{
+    font-weight: bold;
+}
+
+#denyRequest
+{
+    background-color: gray;
+    font-size: 16px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #ccccff;
+    width: auto;
+}
+
+#acceptRequest
+{
+    background-color: #FF6633;
+    font-size: medium;
+    width: auto;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#showText
+{
+    background-color: darkgray;
+    width: 300px;
+    height: 50px;
+    margin-left: 45%;
+    margin-top: -35%;
+    padding: 7px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: auto;
+}

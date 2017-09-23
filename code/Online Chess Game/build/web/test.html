@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jquery-2.1.1.js"></script>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <script type="text/javascript" src="test.js"></script>
+        <script>
+            var userId = '';
+            function sendData(){
+                if(userId === '') userId = 'five1';
+                else if(userId === 'five1') userId = 'five12';
+                else if(userId === 'five12') userId = 'five1';
+                var simpleMoveData = '{"simpleMove":{"pieceMoved":{"name":"BLB"},"previousPosition":{"row":"3","column":"e"},"currentPosition":{"row":"5","column":"g"},"nativeNextPossiblePositions":{},"opponentNextPossiblePositions":{},"nativeReturnSet":false,"opponentReturnSet":false},"pieceBeaten":{"pieceBeaten":{"name":""},"beatenBy":{"name":""},"beatingPiecePreviousPosition":{"row":"","column":""},"beatingPieceCurrentPosition":{"row":"","column":""},"beatenPiecePosition":{"row":"","column":""},"nativeNextPossiblePositions":{},"opponentNextPossiblePositions":{},"nativeReturnSet":false,"opponentReturnSet":false},"specialMove":{"eNPassantPlayed":false,"cAstle":false,"pAwnUpgrade":false,"eNPassantGiven":false,"pawnUpgrade":{"pawnName":{"name":""},"upgradedPiece":{"name":""},"pawnPreviousPosition":{"row":"","column":""},"pawnCurrentPosition":{"row":"","column":""},"upgradedPiecePosition":{"row":"","column":""}},"castle":{"kingName":{"name":""},"rockName":{"name":""},"kingPreviousPosition":{"row":"","column":""},"kingCurrentPosition":{"row":"","column":""},"rockPreviousPosition":{"row":"","column":""},"rockCurrentPosition":{"row":"","column":""},"rightCastle":false,"leftCastle":false},"enPassantPlayed":{"beatenPawnName":{"name":""},"beatingPawnName":{"name":""},"beatenPawnPosition":{"row":"","column":""},"beatingPawnPreviousPosition":{"row":"","column":""},"beatingPawnCurrentPosition":{"row":"","column":""}},"enPassantGiven":{"nativePlayer":{"userId":""},"opponentPlayer":{"userId":""},"nativeEnPassantPiece":{"name":""},"nativePiecePreviousPosition":{"row":"","column":""},"nativePieceCurrentPosition":{"row":"","column":""},"rightOpponentEnPassantPiece":false,"leftOpponentEnPassantPiece":false,"opponentRightEnPassantPiece":{"name":""},"opponentLeftEnPassantPiece":{"name":""},"opponentRightPiecePreviousPosition":{"row":"","column":""},"opponentRightPieceNextPossiblePosition":{"row":"","column":""},"opponentLeftPiecePreviousPosition":{"row":"","column":""},"opponentLeftPieceNextPossiblePosition":{"row":"","column":""},"enPassantExpired":true},"nativeNextPossiblePositions":{},"opponentNextPossiblePositions":{},"nativeReturnSet":false,"opponentReturnSet":false},"check":{"kingUnderCheck":{"name":""},"checkGivenBy":[null,null],"kingPosition":{"row":"","column":""},"checkGivenPosition":[null,null],"opponentKingNextPossiblePosition":{},"allowedPiecesOfOpponentWithAllowedPositions":{}},"checkMate":{"checkMateBy":{"userId":""},"checkMateTo":{"userId":""}},"sImpleMove":true,"pIeceBeaten":false,"sPecialMove":false,"cHeck":false,"cHeckMate":false,"playedBy":{"userId":"five1"},"toBeRecievedBy":{"userId":"five12"},"played":true,"recieved":false,"moveSkipped":false,"hostBlockedPieces":false,"clientBlockedPieces":false}';
+                var simpleMoveJson = JSON.parse(simpleMoveData);
+                console.log(simpleMoveJson);
+                
+                $.getJSON('PlayerMove', {userId : userId ,lastMove : JSON.stringify(simpleMoveJson), team : 'brown', tableNumber : '0'}, function(data){
+                    $("#response").html(JSON.stringify(data));
+                    console.log(JSON.stringify(data));
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="sendData()">
+            Send Data
+        </button>
+        <div id="response">
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Online Chess Game</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Form Validation</title>
+<script type="text/javascript" src="script.js">
+</script>
+</head>
+
+<body alt="">
+<div id="background">
+  <img src="images/Signup background.jpg" class="stretch" alt="img" />
+  <table width="100" border="0" id="rollnumber">
+  <tr>
+    <td><span style="color:#630; opacity:0.7">MC120401463</span></td>
+  </tr>
+  </table>
+  <table width="236" border="0" id="specialthanks">
+  <tr>
+    <td width="230">Special Thanks to:</td>
+  </tr>
+  <tr>
+    <td>www.alison.com</td>
+  </tr>
+  <tr>
+    <td>www.visual-paradigm.com</td>
+  </tr>
+  <tr>
+    <td>www.tomcat.apache.org</td>
+  </tr>
+  <tr>
+    <td>www.no-ip.com</td>
+  </tr>
+  </table>
+</div>
+    <form name="signinform" onSubmit="return(validateSignInForm());" action="SignIn">
+<table width="476" height="138" border="0" id="signin">
+  <tr>
+    <td width="174" height="71" valign="bottom">UserID</td>
+    <td width="178" valign="bottom">Password</td>
+    <td width="110">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="33">
+    <table width="149" border="0">
+      <tr>
+        <td width="143" id="signinrowuserid" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>
+    <input name="userid" type="text" id="userid" size="25" /></td>
+    <td><table width="148" border="0">
+      <tr>
+        <td width="142" id="signinrowpassword" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="password" type="password" id="password" size="25" onfocus="signInFieldCheck(document.signinform.userid)"/></td>
+    <td valign="bottom"><input name="Login" type="submit" id="button" formtarget="_self" value="Login" style="font-size:12px"/></td>
+  </tr>
+  <tr>
+      <td height="26"><a href="recover_password.html"><font color="black">Forgot Password?</font></a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+    <form name="signupform" onSubmit="return(validateProfile());" action="SignUp">
+<table width="631" height="671" border="0" id="signup">
+  <tr>
+    <td width="182" height="56" style="font-size: xx-large; color: #FFF;"> Sign Up</td>
+    <td width="152">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="67"><table width="144" border="0">
+      <tr>
+        <td width="138" id="rowfirstname" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="firstname" type="text" id="inputtext" placeholder="First Name" /></td>
+    <td><table width="144" border="0">
+      <tr>
+        <td width="138" id="rowlastname" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="lastname" type="text" id="inputtext" placeholder="Last Name" onfocus="allLetter(document.signupform.firstname)" /></td>
+  </tr>
+  <tr>
+    <td height="66"><table width="144" border="0">
+      <tr>
+        <td width="138" id="rowuserid" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="userid" type="text" id="inputtext" placeholder="UserID" onfocus="allLetter(document.signupform.lastname)" /></td>
+    <td><table width="144" border="0">
+      <tr>
+        <td width="138" id="rowpassword" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="password" type="password" id="inputtext" placeholder="Password" onfocus="allLetter(document.signupform.userid)" /></td>
+  </tr>
+  <tr >
+    <td height="69"><table width="144" border="0">
+      <tr>
+        <td width="138" id="rowcontact" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="contact" type="text" id="inputtext" placeholder="Contact (optional)" /></td>
+    <td><table width="144" border="0">
+      <tr>
+        <td width="138" id="rowgender" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>
+      <table width="149">
+      <tr>
+        <td width="141"><label>
+          <input type="radio" name="Gender" value="male" id="Gender_0" onfocus="allLetter(document.signupform.contact)"/>
+          <span style="color: #FFF">Male</span></label></td>
+      </tr>
+      <tr>
+        <td height="24"><label>
+          <input type="radio" name="Gender" value="female" id="Gender_1" onfocus="allLetter(document.signupform.contact)"/>
+          <span style="color: #FFF">Female</span></label></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="70"><table width="254" border="0">
+      <tr>
+        <td width="248" id="rowprimaryemail" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="primaryemail" type="text" id="inputtext" placeholder="Primary Email" style="width:335px" onfocus="allLetter(document.signupform.Gender[0])"/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" height="64"><table width="254" border="0">
+      <tr>
+        <td width="248" id="rowsecondaryemail" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="secondaryemail" type="text" id="inputtext" placeholder="Secondary Email (Optional)" style="width:335px" onfocus="allLetter(document.signupform.primaryemail)"/></td>
+  <tr>
+    <td colspan="2" height="64"><table width="254" border="0">
+      <tr>
+        <td width="248" style="color: #F00">&nbsp;</td>
+      </tr>
+    </table>      <input name="address" type="text" id="inputtext" placeholder="address (optional)" style="width:335px" onfocus="allLetter(document.signupform.secondaryemail)"/></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="44" valign="bottom">Birthday</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" height="39"><table width="226" height="37" border="0">
+      <tr>
+        <td width="63"><table width="58" border="0">
+          <tr>
+            <td width="115" id="rowdate" style="font-size: 9px; color: #F00;">&nbsp;</td>
+          </tr>
+        </table>
+          <select name="date" id="date">
+          <option selected="selected">date</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select></td>
+        <td width="74"><table width="71" border="0">
+          <tr>
+            <td width="65" id="rowmonth" style="color: #F00">&nbsp;</td>
+          </tr>
+        </table>
+          <select name="month" id="month" title="Month">
+          <option selected="selected">month</option>
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>Mar</option>
+          <option>Apr</option>
+          <option>May</option>
+          <option>Jun</option>
+          <option>Jul</option>
+          <option>Aug</option>
+          <option>Sep</option>
+          <option>Oct</option>
+          <option>Nov</option>
+          <option>Dec</option>
+        </select></td>
+        <td width="75"><table width="65" border="0">
+          <tr>
+            <td width="59" id="rowyear" style="color: #F00">&nbsp;</td>
+          </tr>
+        </table>
+          <select name="year" id="year" style="alignment-adjust:central">
+          <option selected="selected">year</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+          <option>2009</option>
+          <option>2008</option>
+          <option>2007</option>
+          <option>2006</option>
+          <option>2005</option>
+          <option>2004</option>
+          <option>2003</option>
+          <option>2002</option>
+          <option>2001</option>
+          <option>2000</option>
+          <option>1999</option>
+          <option>1998</option>
+          <option>1997</option>
+          <option>1996</option>
+          <option>1995</option>
+          <option>1994</option>
+          <option>1993</option>
+          <option>1992</option>
+          <option>1991</option>
+          <option>1990</option>
+          <option>1989</option>
+          <option>1988</option>
+          <option>1987</option>
+          <option>1986</option>
+          <option>1985</option>
+          <option>1984</option>
+          <option>1983</option>
+          <option>1982</option>
+          <option>1981</option>
+          <option>1980</option>
+          <option>1979</option>
+          <option>1978</option>
+          <option>1977</option>
+          <option>1976</option>
+          <option>1975</option>
+          <option>1974</option>
+          <option>1973</option>
+          <option>1972</option>
+          <option>1971</option>
+          <option>1970</option>
+        </select></td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="77" colspan="2"><input name="register" type="submit" id="button" formtarget="_self" value="Sign Up" style="font-size:36px; margin-left:10px"/></td>
+    <td width="283">&nbsp;</td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>

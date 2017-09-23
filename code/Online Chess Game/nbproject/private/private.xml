@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="3">
+        <file>
+            <url>src/java/GameRoom/GameRoomServlet.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>64</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/java/SignIn/SignIn.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>9</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/java/ChessBoard/GetMove.java</url>
+            <bookmark id="3">
+                <name/>
+                <line>46</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/lectures.future/Online%20Chess%20Game/web/admin.js</file>
+            <file>file:/D:/lectures.future/Online%20Chess%20Game/src/java/GameClasses/OnlineChessGame/ChessBoardMessageWindow.java</file>
+            <file>file:/D:/lectures.future/Online%20Chess%20Game/src/java/GameRoom/SendMessage.java</file>
+            <file>file:/D:/lectures.future/Online%20Chess%20Game/src/java/ChessBoard/SendMessageChessBoard.java</file>
+        </group>
+    </open-files>
+</project-private>

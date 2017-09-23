@@ -1,0 +1,58 @@
+/* CSS Document */
+
+body,td,th {
+	font-size: 9px;
+	color: #FFF;
+}
+
+#background {
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+
+#inputtext {
+	border-radius: 15px;
+	background-color: #630;
+	height: 50px;
+	width: 150px;
+	opacity: 0.7;
+	padding-left: 8px;
+	font-size: 18px;
+}
+
+#button {
+	font-size:7pt;
+	color:black;
+	background-color:#666;
+	border:2px solid #666;
+	padding:3px
+}
+
+#signin{
+	position: absolute;
+	left:25px;
+	top:0px;
+}
+
+#signup{
+	position: absolute;
+	left: 26px;
+	top: 183px;
+}
+
+#rollnumber{
+	position: absolute;
+	bottom:10px;
+	left:25px;	
+	font-size:14px; 
+	opacity:0.7;
+}
+
+#specialthanks{
+	position: absolute;
+	bottom:10px;
+	right:10px;	
+}

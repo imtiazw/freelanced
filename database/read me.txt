@@ -1,0 +1,10 @@
+database was implemented in the following:
+
+
+Microsoft SQL Server Management Studio			10.50.1617.0
+Microsoft Analysis Services Client Tools		10.50.1617.0
+Microsoft Data Access Components (MDAC)			6.1.7601.17514
+Microsoft MSXML						3.0 5.0 6.0 
+Microsoft Internet Explorer				9.11.9600.17280
+Microsoft .NET Framework				2.0.50727.5485
+Operating System					6.1.7601
